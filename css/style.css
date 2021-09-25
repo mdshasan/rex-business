@@ -8,11 +8,13 @@
 }
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 body {
   line-height: 1.8;
   font-family: "Fira Sans", sans-serif;
   overflow-x: hidden;
+  position: relative;
 }
 
 p {
@@ -216,7 +218,7 @@ nav ul li .sub-menu {
   }
 } */
 
-@-webkit-keyframes hasan {
+ @-webkit-keyframes hasan {
   from {
     -webkit-transform: translateY(20%);
     -ms-transform: translateY(20%);
@@ -229,7 +231,7 @@ nav ul li .sub-menu {
   }
 }
 
-@-webkit-keyframes hasan {
+/* @-webkit-keyframes hasan {
   from {
     -webkit-transform: translateY(20%);
     transform: translateY(20%);
@@ -238,15 +240,34 @@ nav ul li .sub-menu {
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
+} */
+
+@-webkit-keyframes hasan {
+  from {
+    -webkit-transform: translateY(20%);
+    transform: translateY(20%);
+    -moz-transform: translateY(20%);
+    -ms-transform: translateY(20%);
+    -o-transform: translateY(20%);
+  }
+  to {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
 }
 
 @keyframes hasan {
   from {
     -webkit-transform: translateY(20%);
     transform: translateY(20%);
+    -moz-transform: translateY(20%);
+    -ms-transform: translateY(20%);
+    -o-transform: translateY(20%);
   }
   to {
     -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
     transform: translateY(0);
   }
 }
@@ -1128,7 +1149,7 @@ footer .footer-container {
   left: 0%;
 
   /* bottom: -95%; */
-  top: 14%;
+  top: 3.5rem;
 }
 
 .footer-col .post-container {

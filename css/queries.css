@@ -265,8 +265,7 @@
     align-items: flex-start;
   }
   .feature-container {
-    width: 95%;
-    margin-left: -1rem;
+    width: 100%;
   }
   .feature-icon {
     -webkit-box-flex: 0;
@@ -330,8 +329,13 @@
     font-size: 27px;
   }
   .count-container h2:after {
-    left: 40%;
-    bottom: 8.5rem;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 9.5rem;
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
   }
 
   /* contact page */
@@ -465,11 +469,6 @@
     width: 108px;
   }
 
-  .posts h4:after {
-    top: 12%;
-    width: 115px;
-  }
-
   .tags h4:after {
     top: 25%;
     width: 42px;
@@ -534,19 +533,21 @@
     width: 100%;
   }
   .feature-inner-content h4 {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
   .feature-icon i {
-    font-size: 2rem;
+    font-size: 1.2rem;
   }
 
   .box-btn input[type="submit"] {
-    font-size: 0.85rem;
+    font-size: 0.65rem;
   }
-
+  .box-btn i {
+    font-size: 0.6rem;
+  }
   .feature-inner-content p {
-    font-size: 85%;
+    font-size: 71%;
   }
   .testimonial-row {
     -webkit-box-orient: vertical;
@@ -609,5 +610,15 @@
     -webkit-box-flex: 0;
     -ms-flex: 0 0 87%;
     flex: 0 0 87%;
+  }
+  .count-header h2 {
+    font-size: 23px;
+  }
+  .count-container h3 {
+    font-size: 18px;
+    margin-bottom: 0.3rem;
+  }
+  .count-container h3::after {
+    width: 3rem;
   }
 }
