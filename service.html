@@ -243,12 +243,12 @@
 			</div>
 
 			<div class="count-client">
-				<h3>1530</h3>
+				<h3 class="count-up">1530</h3>
 				<h5>Happy Clients</h5>
 			</div>
 
 			<div class="count-project">
-				<h3>1240
+				<h3 class="count-up">1240
 				</h3>
 				<h5>Projects Finished
 
@@ -256,7 +256,7 @@
 			</div>
 
 			<div class="count-solution">
-				<h3>1380
+				<h3 class="count-up">1380
 				</h3>
 				<h5>Business Solutions
 
@@ -413,7 +413,21 @@
 </div>
 </footer>
 
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="js/jquery.counterup.min.js"></script>
 
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+   
+<script>
+
+$(function() {
+            $('.count-up').counterUp({
+                delay: 10,
+                time: 4000
+            });
+        });
+</script>
+ 
 
 </body>
 </html>
