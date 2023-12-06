@@ -146,6 +146,14 @@ img {
 
   position: relative;
 }
+
+.sticky{
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  transition: all 0.6s ease;
+}
+
 .header-row .logo {
   -ms-flex-preferred-size: 25%;
   flex-basis: 25%;
@@ -200,23 +208,7 @@ nav ul li .sub-menu {
   -webkit-animation-duration: 0.5s;
   animation-duration: 0.5s;
 }
-./*animationOut{
-	animation-name: hridoy;
-	animation-duration: .5s;
-}*/
 
-/* @keyframes hridoy {
-  from {
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0);
-  }
-  to {
-    -webkit-transform: translateY(20%);
-    -ms-transform: translateY(20%);
-    transform: translateY(20%);
-  }
-} */
 
  @-webkit-keyframes hasan {
   from {
@@ -231,16 +223,7 @@ nav ul li .sub-menu {
   }
 }
 
-/* @-webkit-keyframes hasan {
-  from {
-    -webkit-transform: translateY(20%);
-    transform: translateY(20%);
-  }
-  to {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-} */
+
 
 @-webkit-keyframes hasan {
   from {
